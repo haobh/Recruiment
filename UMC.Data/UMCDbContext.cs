@@ -6,7 +6,7 @@ namespace UMC.Data
 {
     public class UMCDbContext : IdentityDbContext<ApplicationUser>
     {
-        public UMCDbContext() : base("UMC")
+        public UMCDbContext() : base("Recruiment")
         {
             this.Configuration.LazyLoadingEnabled = true;
             Database.SetInitializer<UMCDbContext>(null);
@@ -24,6 +24,9 @@ namespace UMC.Data
         public DbSet<Feedback> Feedbacks { set; get; }
         public DbSet<Page> Pages { set; get; }
         public DbSet<Slide> Slides { set; get; }
+        public DbSet<New> News { set; get; }
+        public DbSet<Introduce> Introduces { set; get; }
+        public DbSet<RecruimentInfor> RecruimentInfors { set; get; }
 
         //Migration
         public DbSet<ApplicationGroup> ApplicationGroups { set; get; }

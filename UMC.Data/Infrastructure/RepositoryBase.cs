@@ -80,7 +80,6 @@ namespace UMC.Data.Infrastructure
         public async Task<IEnumerable<T>> GetAll(string[] includes = null)
         {
             //HANDLE INCLUDES FOR ASSOCIATED OBJECTS IF APPLICABLE
-
             if (includes != null && includes.Count() > 0)
             {
                 var query = dataContext.Set<T>().Include(includes.First());

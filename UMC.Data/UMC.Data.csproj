@@ -64,9 +64,21 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\RepositoryBase.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="Migrations\201709270552222_adDB.cs" />
-    <Compile Include="Migrations\201709270552222_adDB.Designer.cs">
-      <DependentUpon>201709270552222_adDB.cs</DependentUpon>
+    <Compile Include="Migrations\201803020701445_CreateDB.cs" />
+    <Compile Include="Migrations\201803020701445_CreateDB.Designer.cs">
+      <DependentUpon>201803020701445_CreateDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803020721546_EditDB.cs" />
+    <Compile Include="Migrations\201803020721546_EditDB.Designer.cs">
+      <DependentUpon>201803020721546_EditDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803020728423_MigrationDB.cs" />
+    <Compile Include="Migrations\201803020728423_MigrationDB.Designer.cs">
+      <DependentUpon>201803020728423_MigrationDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803020731175_MigrationDB1.cs" />
+    <Compile Include="Migrations\201803020731175_MigrationDB1.Designer.cs">
+      <DependentUpon>201803020731175_MigrationDB1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,8 +113,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709270552222_adDB.resx">
-      <DependentUpon>201709270552222_adDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803020701445_CreateDB.resx">
+      <DependentUpon>201803020701445_CreateDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803020721546_EditDB.resx">
+      <DependentUpon>201803020721546_EditDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803020728423_MigrationDB.resx">
+      <DependentUpon>201803020728423_MigrationDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803020731175_MigrationDB1.resx">
+      <DependentUpon>201803020731175_MigrationDB1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

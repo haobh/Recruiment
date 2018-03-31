@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layouts.cshtml";
+}
+<div class="box">
+    <div class="box-header">
+        <h2 class="box-title" style="font-weight:bold">Quản trị tuyển nhân viên</h2>
+    </div><!-- /.box-header -->
+    @using (Html.BeginForm("Search", "TuyenNhanVien", FormMethod.Get))
+    {
+        <form class='form-horizontal'>
+            <div class='form-group margin-bottom-none'>
+                <div class='col-sm-6'>
+                    <input class="form-control input-sm" placeholder="Search">
+                </div>
+                <div class='col-sm-2'>
+                    <button class='btn btn-block btn-success'>Search</button>
+                </div>
+                <div class="col-sm-2">
+                    <a href="@Url.Action("Create","TuyenNhanVien")" class="btn btn-block btn-success">Add New</a>
+                </div>
+            </div>           
+        </form>
+    }    
+    <div class="box-body">
+        <table id="tbStaffRecruiment" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 4.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td> 4</td>
+                    <td>X</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 5.0
+                    </td>
+                    <td>Win 95+</td>
+                    <td>5</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>Trident</td>
+                    <td>
+                        Internet
+                        Explorer 5.5
+                    </td>
+                    <td>Win 95+</td>
+                    <td>5.5</td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Rendering engine</th>
+                    <th>Browser</th>
+                    <th>Platform(s)</th>
+                    <th>Engine version</th>
+                    <th>CSS grade</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div><!-- /.box-body -->
+</div><!-- /.box -->
